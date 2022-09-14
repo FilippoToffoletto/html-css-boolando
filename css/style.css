@@ -19,12 +19,13 @@ img{
 }
 
 .container{
-  max-width: 1100px;
-  width: 80%;
+  max-width: 1500px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .price{
@@ -87,14 +88,32 @@ header .icons i:hover{
 
 /* MAIN */
 
-section .row{
-  display: flex;
+
+
+section .box{
+  padding-bottom: 30px;
 }
 
 section.container .box .model{
   position: relative;
   width: 400px;
+  height: 580px;
 }
+
+section.container .box .model:hover {
+  cursor: pointer;
+}
+section.container .box .model #unob{
+  display: none;
+}
+
+section.container .box .model:hover #unob{
+  display: block;
+}
+section.container .box .model:hover #unoa{
+  display: none;
+}
+
 
 section .box .heart{
   position: absolute;
