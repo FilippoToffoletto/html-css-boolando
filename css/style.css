@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+  padding: 80px 0;
+}
+
 img{
   width: 100%;
+}
+
+.container{
+  max-width: 1100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 70px;
+  max-width: 100%;
+  background-color: #FF6900;
+}
+
+
+
+.container .box{
+  background-color: red;
+
+  /* DEBUG */
+  height: 500px;
+  width: 360px;
+}
+
+
+footer{
+  background-color: #1A1A1A;
+  height: 80px;
 }
