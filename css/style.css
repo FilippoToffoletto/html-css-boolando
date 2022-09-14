@@ -42,6 +42,11 @@ img{
   text-decoration: none;
 }
 
+a:hover{
+  text-decoration: underline;
+  color: yellow;
+}
+
 /* HEADER */
 header{
   display: flex;
@@ -64,11 +69,6 @@ header ul li a{
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-}
-
-header ul li a:hover{
-  text-decoration: underline;
-  color: yellow;
 }
 
 header img{
@@ -100,17 +100,19 @@ section.container .box .model{
   height: 580px;
 }
 
+/* effetti box hover */
 section.container .box .model:hover {
   cursor: pointer;
 }
-section.container .box .model #unob{
+section.container .box .model .image :last-child{
   display: none;
+  position: absolute;
 }
 
-section.container .box .model:hover #unob{
+section.container .box .model:hover :last-child{
   display: block;
 }
-section.container .box .model:hover #unoa{
+section.container .box .model .image:hover :first-child{
   display: none;
 }
 
@@ -144,6 +146,13 @@ section .box .bio{
   font-size: 14px;
 }
 
+section .box #bio6{
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+}
+
+
 section .box .text{
   padding: 5px 0;
   line-height: 23px;
@@ -161,14 +170,50 @@ section .box .text .price{
 }
 
 
-
-
-
-
-
 /* FOOTER */
 
 footer{
   background-color: #1A1A1A;
-  height: 80px;
+  padding-bottom: 30px;
 }
+
+footer .container{
+  color:white;
+  padding-top: 30px;
+}
+
+footer .copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  margin: 10px auto;
+}
+
+footer ul li a{
+  padding-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .social{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .social .icons{
+  padding: 10px 0px;
+}
+
+footer .social .icons i{
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+
+
