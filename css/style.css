@@ -215,5 +215,10 @@ footer .social .icons i{
   padding-left: 10px;
 }
 
+footer .social .icons i:hover{
+  color: yellow;
+  cursor: pointer;
+}
+
 
 
