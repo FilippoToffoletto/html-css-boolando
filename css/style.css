@@ -11,7 +11,7 @@ body{
 }
 
 main{
-  padding: 60px 0;
+  padding: 130px 0;
 }
 
 img{
@@ -49,12 +49,17 @@ a:hover{
 
 /* HEADER */
 header{
+  position: fixed;
+  top: 0%;
+  left: 0%;
   display: flex;
   justify-content:space-around;
   align-items: center;
   height: 70px;
-  max-width: 100%;
+  width: 100%;
   background-color: #FF6900;
+  box-shadow: 0px 0px 15px;
+  z-index: 999;
 }
 
 header ul{
@@ -71,11 +76,11 @@ header ul li a{
   font-weight: bold;
 }
 
-header img{
+header .logo img{
   width: 150px;
 }
 
-header .icons i{
+header ul li i{
   color: white;
   padding-left: 10px;
   font-size: 20px;
@@ -110,7 +115,7 @@ section.container .box .model .image :last-child{
 }
 
 section.container .box .model:hover :last-child{
-  display: block;
+  display: inline-block
 }
 section.container .box .model .image:hover :first-child{
   display: none;
@@ -124,6 +129,9 @@ section .box .heart{
   background-color: white;
   font-size: 30px;
   padding: 14px;
+}
+section .box .heart:hover{
+  color: red;
 }
 
 section .box .discount{
